@@ -12,12 +12,11 @@ Essentially, it involves,
 
 The goal is to attempt to reproduce an error like this,
 
-> updater | ERROR <job_312371757> GET https://api.github.com/repos/<ORG>/<REPO>/contents/<PATH>/<FILENAME>.tar.gz?ref=<refid>: 403 - This API returns blobs up to 1 MB in size. The requested blob is too large to fetch via the API, but you can use the Git Data API to request blobs up to 100 MB in size.
-updater | <job_312371757> Error summary:
-updater | <job_312371757>   resource: Blob
-updater | <job_312371757>   field: data
-updater | <job_312371757>   code: too_large // See: https://docs.github.com/rest/reference/repos#get-repository-content
-```
+> updater | ERROR <job_312371757> GET https://api.github.com/repos/<ORG>/<REPO>/contents/<PATH>/<FILENAME>.tar.gz?ref=<refid>: 403 - This API returns blobs up to 1 MB in size. The requested blob is too large to fetch via the API, but you can use the Git Data API to request blobs up to 100 MB in size> .
+> updater | <job_312371757> Error summary:
+> updater | <job_312371757>   resource: Blob
+> updater | <job_312371757>   field: data
+> updater | <job_312371757>   code: too_large // See: https://docs.github.com/rest/reference/repos#get-repository-content
 
 ## Creating the content
 
