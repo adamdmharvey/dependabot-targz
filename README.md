@@ -8,7 +8,7 @@ Essentially, it involves,
 
 1. A code pattern that involves an Nx monorepo with a local dependency pointing to a binrary `tar.gz` file > 1 megabyte
 2. Turning on Dependabot to scan for the packages and open pull requests
-3. Reviewing the scan output through the path https://github.com/<org>/<repo>/network/updates
+3. Reviewing the scan output through the path `https://github.com/<org>/<repo>/network/updates`
 
 The goal is to attempt to reproduce an error like this,
 
