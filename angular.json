@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "dependabot-targz": "apps/dependabot-targz",
+    "dependabot-targz-e2e": "apps/dependabot-targz-e2e"
+  }
+}

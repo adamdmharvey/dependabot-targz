@@ -1,0 +1,28 @@
+{
+  "root": "apps/dependabot-targz-e2e",
+  "sourceRoot": "apps/dependabot-targz-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/dependabot-targz-e2e/cypress.json",
+        "devServerTarget": "dependabot-targz:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "dependabot-targz:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/dependabot-targz-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["dependabot-targz"]
+}
