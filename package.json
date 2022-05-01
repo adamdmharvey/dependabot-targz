@@ -19,7 +19,7 @@
     "@angular/platform-browser": "~13.2.0",
     "@angular/platform-browser-dynamic": "~13.2.0",
     "@angular/router": "~13.2.0",
-    "@nrwl/angular": "13.8.5",
+    "@nrwl/angular": "14.0.5",
     "large-dependency": "file:apps/dependabot-targz/large-dependency.tar.gz",
     "rxjs": "~7.4.0",
     "tslib": "^2.0.0",
